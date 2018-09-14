@@ -1,0 +1,42 @@
+<div id="title">
+    <h1 class="heading">Pizza Time!</h1>
+    <img class="pic" src="/assets/img/pizzatime.gif" alt="Gif from spiderman 2">
+    <h5>Click to Devour</h5>
+</div>
+
+<div class="clearfix" id="holderholder">
+
+    <div class="holder clearfix" id="holder1">
+        <ol>
+            {{#each notDevoured}}
+            <li class="pizzaItem">
+                <button class="btn pizzabtn" data-boo="{{devoured}}" data-id="{{id}}"> {{pizza_name}}</button>
+                <button class="btn deleter" data-boo="{{devoured}}" data-id="{{id}}">Delete</button>
+            </li>
+            {{/each}}
+
+        </ol>
+    </div>
+    <div class="holder clearfix" id="holder2">
+
+        <ol>
+            {{#each devoured}}
+            <li class="pizzaItem">
+                <button class="btn pizzabtn" data-boo="{{devoured}}" data-id="{{id}}"> {{pizza_name}}</button>
+                <button class="btn deleter" data-boo="{{devoured}}" data-id="{{id}}">Delete</button>
+
+            </li>
+            {{/each}}
+
+        </ol>
+
+    </div>
+</div>
+<div id="newPizzaForm">
+
+<form >
+    <h5><label id="newPizza" for="pizza">New Pizza:</label></h5>
+    <textarea class="text form-control" rows="1" id="pizza"></textarea>
+    <button type="submit" class="btn" id="submit"> Add Pizza!</button>
+</form>
+</div>

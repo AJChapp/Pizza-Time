@@ -1,0 +1,71 @@
+#title{
+    height: 282px;
+    text-align: center;
+    color: white;
+}
+.pic{
+    width: 360px;
+    height: 202px;;
+}
+#holder1{
+    min-height: 200px;
+    width: 50%;
+}
+#holderholder{
+    width: 100%;
+    background-color: black;
+    
+}
+#holder2{
+    
+    width: 50%;
+    float: left;
+    position: absolute;
+    min-height: 200px;
+    right: 0px;
+    top: 282px;
+}
+.holder{
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pizzaItem{
+    margin: 0 0 4px 0 ;
+}
+
+#newPizza{
+    color: white;
+    text-align: center;
+}
+
+#newPizzaForm{
+    text-align: center;
+    justify-content: center;
+    
+}
+.text{
+    width: 300px;
+    align-items: center;
+    margin: auto;
+}
+
+body{
+    background-color: #545252;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.deleter{
+    background-color: rgb(185, 37, 37);
+}
+
+ol {list-style: none; counter-reset: li}
+li::before {content: counter(li); color:#DDDDDD;
+    display: inline-block; width: 1em;
+    margin-left: -1em}
+    li {counter-increment: li}
